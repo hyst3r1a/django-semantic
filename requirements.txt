@@ -6,4 +6,4 @@ summarizer
 summa
 gunicorn
 django-heroku
-whitnoise
+whitenoise
