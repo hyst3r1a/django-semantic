@@ -1,1 +1,1 @@
-web: gunicorn semantic-site.wsgi
+web: gunicorn -w 4 main:app
