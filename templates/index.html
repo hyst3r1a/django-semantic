@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content2 %}
+<div class="m-2"><h4></h4></div>
+<form action="/index/" method="post">
+    {%csrf_token%}
+    <label for="enter_text">Текст для аналізу: </label>
+    <input id="entered_text" type="text" name="entered_text" value="{{ enter_text }}">
+    <input type="submit" value="OK">
+</form>
+
+<div>
+    <h4>Суммаризація введеного тексту:</h4></br>
+    <p>{{summarized_text}}</p>
+</div>
+<div>
+    <h4>Можливе найважливіше речення тексту:</h4></br>
+    <p>{{emphasized_text}}</p>
+</div>
+
+<div>
+    <h4>Ключові слова:</h4></br>
+    <p style="white-space: pre-line;">{{keywords}}</p>
+</div>
+
+<div>
+    <h4>Аналіз слів тексту за частинаами мови та частотою входженнь:</h4></br>
+    <p style="white-space: pre-line;">{{analyzed_words_text}}</p>
+</div>
+{% endblock %}

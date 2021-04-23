@@ -1,0 +1,6 @@
+django-extensions
+djangorestframework
+pymorphy2
+pymorphy2-dicts-uk
+summarizer
+summa
